@@ -1,0 +1,25 @@
+.todo-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+mat-card {
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.task-list {
+  margin-top: 20px;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+mat-checkbox {
+  flex-grow: 1;
+}

@@ -1,0 +1,10 @@
+<div class="task-item">
+  <mat-checkbox [(ngModel)]="task.isCompleted"
+                (change)="onToggleComplete()"
+                class="task-checkbox">
+    {{ task.description }}
+  </mat-checkbox>
+  <button mat-icon-button color="warn" (click)="onDelete()" class="delete-btn">
+    <mat-icon>delete</mat-icon>
+  </button>
+</div>

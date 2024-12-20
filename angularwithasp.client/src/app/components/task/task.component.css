@@ -1,0 +1,14 @@
+.task-list {
+  margin-top: 20px;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+mat-checkbox {
+  flex-grow: 1;
+}

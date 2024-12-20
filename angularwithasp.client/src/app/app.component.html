@@ -1,0 +1,16 @@
+<div class="todo-container">
+  <mat-card>
+    <h1>To-Do List</h1>
+
+    <!-- Add New Task Button -->
+    <button mat-raised-button color="primary" (click)="openAddTaskDialog()">Add Task</button>
+
+    <!-- Task List -->
+    <div class="task-list">
+      <app-task *ngFor="let task of tasks"
+                [task]="task"
+                (deleteTask)="deleteTask($event)"
+                (toggleComplete)="toggleCompletion($event)"></app-task>
+    </div>
+  </mat-card>
+</div>
